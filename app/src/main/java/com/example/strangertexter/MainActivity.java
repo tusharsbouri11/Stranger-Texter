@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
 
-                    if(!getPhone.equalsIgnoreCase("")) {
+                    if(!getPhone.equalsIgnoreCase("") && condition!=0) {
                         Uri uri = Uri.parse(code);
                         startActivity(new Intent(Intent.ACTION_VIEW, uri));
                     }
